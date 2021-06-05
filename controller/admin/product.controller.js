@@ -1,5 +1,6 @@
 const cateModel = require('../../model/category.model');
 const proModel = require('../../model/product.model');
+const cloudinary = require('../../utils/cloudinary');
 
 module.exports.view = async function(req, res) {
     var docCate = await cateModel.find({}).then(doc => doc);
